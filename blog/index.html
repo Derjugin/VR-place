@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Блог</title>
+
+    <!-- bootstrap стили -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
+    <!-- Сброс стилей -->
+    <link href="../styles-reset.css" rel="stylesheet" />
+    <!-- Мои стили -->
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    
+  </head>
+
+  <body>
+    <img class="bg" src="../dist/img/lines.png" alt="">
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="../">
+          <img class="logo" src="../dist/img/logo.svg" alt="">
+        </a>
+        <a href="../contacts/" class="btn-action">Контакты</a>
+        <div class="menu">
+          <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content body-text">
+              <li><a href="../">Главная</a></li>
+              <li><a href="../about/">О нас</a></li>
+              <li><a href="../service/">Сервис</a></li>
+              <li>
+                <div class="menu-first-level">Страницы
+                  <img src="../dist/img/arrow.svg" alt="">
+                  <div class="menu-second-level">
+                    <a href="../pricing/">Цены</a>
+                    <a href="../service/detail.html">Услуги</a>             
+                  </div>
+                </div>
+              </li>
+              <li><a class="active" href="../blog/">Блог</a></li>
+            </ul>
+          </nav>
+          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt=""></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      
+      <section class="pages info">
+        <div class="title-desc-content">
+          <div class="title-desc">
+            <h1 class="heading">
+              Блог
+              <img class="ellipse-img" src="../dist/img/ellipse-pages.svg" alt="">
+            </h1>
+          </div>
+          <div class="pagination">
+            <a href="../" class="pagination-home">Главная</a> > <a href="#" class="pagination-level">Блог</a>
+          </div>
+        </div>
+        <hr>
+      </section>
+
+      <section class="blog-wrapper">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image1.png" class="card-img-top" alt="парень в vr очках">
+              <div class="card-body">
+                <h5 class="card-title">VR Games</h5>
+                <p class="card-text">Развлечения становятся виртуальными: подъем VR-игр.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image2.png" class="card-img-top" alt="vr очки">
+              <div class="card-body">
+                <h5 class="card-title">VR Games</h5>
+                <p class="card-text">Развлечения становятся виртуальными: подъем VR-игр.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image3.png" class="card-img-top" alt="vr очки на диване">
+              <div class="card-body">
+                <h5 class="card-title">VR Entertainment </h5>
+                <p class="card-text">Делаем события запоминающимися: сила виртуальной реальности для корпоративных и особых мероприятий.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image4.png" class="card-img-top" alt="vr-игрв">
+              <div class="card-body">
+                <h5 class="card-title">VR Event</h5>
+                <p class="card-text">Изучение новых миров: преимущества VR-путешествий.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image5.png" class="card-img-top" alt="парень в vr очках">
+              <div class="card-body">
+                <h5 class="card-title">VR Architecture</h5>
+                <p class="card-text">Воплощение дизайна в жизнь: как виртуальная реальность меняет архитектуру.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image6.png" class="card-img-top" alt="знак бесконечность">
+              <div class="card-body">
+                <h5 class="card-title">VR Games</h5>
+                <p class="card-text">Развлечения становятся виртуальными: подъем VR-игр.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image7.png" class="card-img-top" alt="пара в vr очках">
+              <div class="card-body">
+                <h5 class="card-title">VR Games</h5>
+                <p class="card-text">Развлечения становятся виртуальными: подъем VR-игр.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image8.png" class="card-img-top" alt="парень в vr очках">
+              <div class="card-body">
+                <h5 class="card-title">VR Games</h5>
+                <p class="card-text">Развлечения становятся виртуальными: подъем VR-игр.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="./img/blog-Image9.png" class="card-img-top" alt="vr очки">
+              <div class="card-body">
+                <h5 class="card-title">VR Education</h5>
+                <p class="card-text">Будущее образования: как виртуальная реальность революционизирует учебный процесс.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-logo-wrapper">
+          <img class="logo" src="../dist/img/logo.svg" alt="">
+          <div class="social">
+            <a class="vk" href="https://vk.com/" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="">
+            </a>
+            <a class="tg" href="https://t.me/vrplace" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="">
+            </a>
+            <a class="youtube" href="https://www.youtube.com/" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="">
+            </a>
+            <a class="gh" href="https://derjugin.github.io/" target="_blank">
+              <img src="../dist/img/icon-gh.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer-menu-wrapper body-text">
+          <ul class="h6">Основное
+            <li><a href="../">Главная</a></li>
+            <li><a href="../pricing/">Цены</a></li>
+            <li><a href="../service/">Сервис</a></li>
+            <li><a href="../blog/">Блог</a></li>
+            <li><a href="../our-team/">Наша команда</a></li>
+          </ul>
+          <ul class="h6">Поддержка
+            <li><a href="../about/">О нас</a></li>
+            <li><a href="../contacts/">Контакты</a></li>
+            <li><a href="../FAQ/">FAQ</a></li>
+            <li><a href="../terms/">Пользовательское соглашение</a></li>
+            <li><a href="../policy/">Политика конфиденциальности</a></li>
+          </ul>
+          <div class="help h6">Нужна помощь?
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/location.svg" alt="значек локации">125009 Россия, Москва, Романов переулок, 2с1
+
+            </div>
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/message.svg" alt="значек сообщения">Support@VRNas.com
+            </div>
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
+            </div>
+          </div>
+          <script src="../dist/script.js"></script>
+        </div>
+      </div>
+      <div class="footer-copyrignt body-text">
+        <hr>
+        <p>© Copyright 2023. Все права защищены</p>
+      </div>   
+      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="">
+    </footer> 
+  </body>
+</html>

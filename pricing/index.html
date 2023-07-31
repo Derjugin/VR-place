@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Цены</title>   
+    <!-- Сброс стилей -->
+    <link href="../styles-reset.css" rel="stylesheet" />
+    <!-- Мои стили -->
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <img class="bg" src="../dist/img/lines.png" alt="">
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="../">
+          <img class="logo" src="../dist/img/logo.svg" alt="">
+        </a>
+        <a href="../contacts/" class="btn-action">Контакты</a>
+        <div class="menu">
+          <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content body-text">
+              <li><a href="../">Главная</a></li>
+              <li><a href="../about/">О нас</a></li>
+              <li><a href="../service/">Сервис</a></li>
+              <li>
+                <div class="menu-first-level">Страницы
+                  <img src="../dist/img/arrow.svg" alt="">
+                  <div class="menu-second-level">
+                    <a href="../pricing/">Цены</a>
+                    <a class="active" href="../service/detail.html">Услуги</a>             
+                  </div>
+                </div>
+              </li>
+              <li><a href="../blog/">Блог</a></li>
+            </ul>
+          </nav>
+          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt=""></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      
+      <section class="pages info">
+        <div class="title-desc-content">
+          <div class="title-desc">
+            <h1 class="heading">
+              Цены
+              <img class="ellipse-img" src="../dist/img/ellipse-pages.svg" alt="">
+            </h1>
+          </div>
+          <div class="pagination">
+            <a href="../" class="pagination-home">Главная</a> > <a href="#" class="pagination-level">Цены</a>
+          </div>
+        </div>
+        <hr>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-logo-wrapper">
+          <img class="logo" src="../dist/img/logo.svg" alt="">
+          <div class="social">
+            <a class="vk" href="https://vk.com/" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="">
+            </a>
+            <a class="tg" href="https://t.me/vrplace" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="">
+            </a>
+            <a class="youtube" href="https://www.youtube.com/" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="">
+            </a>
+            <a class="gh" href="https://derjugin.github.io/" target="_blank">
+              <img src="../dist/img/icon-gh.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer-menu-wrapper body-text">
+          <ul class="h6">Основное
+            <li><a href="../">Главная</a></li>
+            <li><a href="../pricing/">Цены</a></li>
+            <li><a href="../service/">Сервис</a></li>
+            <li><a href="../blog/">Блог</a></li>
+            <li><a href="../our-team/">Наша команда</a></li>
+          </ul>
+          <ul class="h6">Поддержка
+            <li><a href="../about/">О нас</a></li>
+            <li><a href="../contacts/">Контакты</a></li>
+            <li><a href="../FAQ/">FAQ</a></li>
+            <li><a href="../terms/">Пользовательское соглашение</a></li>
+            <li><a href="../policy/">Политика конфиденциальности</a></li>
+          </ul>
+          <div class="help h6">Нужна помощь?
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/location.svg" alt="значек локации">125009 Россия, Москва, Романов переулок, 2с1
+
+            </div>
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/message.svg" alt="значек сообщения">Support@VRNas.com
+            </div>
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
+            </div>
+          </div>
+          <script src="../dist/script.js"></script>
+        </div>
+      </div>
+      <div class="footer-copyrignt body-text">
+        <hr>
+        <p>© Copyright 2023. Все права защищены</p>
+      </div>   
+      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="">
+    </footer> 
+  </body>
+</html>
