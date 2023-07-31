@@ -8,7 +8,7 @@ function openNav() {
   }
   // КОНЕЦ
 
-
+// ВИДЕО
   document.addEventListener('DOMContentLoaded', function() {
     var videoContainer = document.querySelector('.video-container');
     var videoWrapper = videoContainer.querySelector('.video-wrapper');
@@ -50,3 +50,5 @@ function loadVideo(videoUrl) {
   var videoblock = document.querySelector('.videoblock');
   videoblock.innerHTML = '<iframe src="' + videoUrl + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 }
+
+  // КОНЕЦ

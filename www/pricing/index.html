@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Цены</title>   
-    <!-- Сброс стилей -->
-    <link href="../styles-reset.css" rel="stylesheet" />
+    <title>Тарифы и Цены</title>   
     <!-- Мои стили -->
-    <link href="../styles.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/dist/script.js" defer></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
   </head>
 
   <body>
-    <img class="bg" src="../dist/img/lines.png" alt="">
+    <img class="background-lines" src="../dist/img/lines.png" alt="фон в виде волнистых линий">
     <header class="header">
       <div class="header-wrapper">
         <a href="../">
-          <img class="logo" src="../dist/img/logo.svg" alt="">
+          <img class="logo" src="../dist/img/logo.svg" alt="логотип">
         </a>
         <a href="../contacts/" class="btn-action">Контакты</a>
         <div class="menu">
@@ -28,17 +27,18 @@
               <li><a href="../service/">Сервис</a></li>
               <li>
                 <div class="menu-first-level">Страницы
-                  <img src="../dist/img/arrow.svg" alt="">
+                  <img src="../dist/img/arrow.svg" alt="стрелка вниз">
                   <div class="menu-second-level">
-                    <a href="../pricing/">Цены</a>
-                    <a class="active" href="../service/detail.html">Услуги</a>             
+                    <a class="active" href="../pricing/">Цены</a>
+                    <a href="../service/detail.html">Услуги</a>   
+                    <a href="../about/team.html">Наша команда</a>           
                   </div>
                 </div>
               </li>
               <li><a href="../blog/">Блог</a></li>
             </ul>
           </nav>
-          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt=""></span>
+          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt="мобильное меню"></span>
         </div>
       </div>
     </header>
@@ -49,34 +49,239 @@
         <div class="title-desc-content">
           <div class="title-desc">
             <h1 class="heading">
-              Цены
+              Тарифы и Цены
               <img class="ellipse-img" src="../dist/img/ellipse-pages.svg" alt="">
             </h1>
           </div>
           <div class="pagination">
-            <a href="../" class="pagination-home">Главная</a> > <a href="#" class="pagination-level">Цены</a>
+            <a href="../" class="pagination-home">Главная</a> > <a href="#" class="pagination-level">Тарифы и Цены</a>
           </div>
         </div>
         <hr>
       </section>
 
+      <section class="pricing-section">
+        <div class="main-wrapper-center">
+          <div class="center-title">
+            <p class="caption">Цены</p>
+            <h5>Тарифные планы</h5>
+            <p class="body-text">Выберите тарифный план, соответствующий вашим потребностям и бюджету. Все тарифные планы имеют бесплатный пробный период, так что вы можете протестировать наш сервис и посмотреть, какой тариф подходит вам лучше всего.
+            </p>
+          </div>
+        </div>
+        <div class="price-cards">
+
+          <div class="pr-card">
+            <div class="prices">
+              <p class="heading-9">Тариф «Базовый»</p>
+              <div class="price">
+                <span class="text-big">$99</span>
+                <span class="body-text"> / месяц</span></div>              
+              <p class="body-text">Все основные функции уже включены в тариф</p>
+            </div>
+            <div class="price-info">
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Доступ к множеству VR-игр и впечатлений</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Ограниченный доступ к образовательному контенту</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Ограниченный доступ к инструментам архитектуры и проектирования</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Нет доступа к эксклюзивным мероприятиям или рекламным акциям</span>
+              </div>
+            </div>
+            <a href="" class="btn-action">14 дней пробного периода</a>
+          </div>
+
+          <div class="pr-card">
+            <div class="prices">
+              <p class="heading-9">Тариф «Стандарт»</p>
+              <div class="price">
+                <span class="text-big">$149</span>
+                <span class="body-text"> / месяц</span></div>              
+                <p class="body-text">Все основные функции уже включены в тариф</p>
+            </div>
+            <div class="price-info">
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Доступ к множеству VR-игр и впечатлений</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Ограниченный доступ к образовательному контенту</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Ограниченный доступ к инструментам архитектуры и проектирования</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Нет доступа к эксклюзивным мероприятиям или рекламным акциям</span>
+              </div>
+            </div>
+            <a href="" class="btn-action">14 дней пробного периода</a>
+          </div>
+
+          <div class="pr-card">
+            <div class="prices">
+              <p class="heading-9">Тариф «Премиум»</p>
+              <div class="price">
+                <span class="text-big">$200</span>
+                <span class="body-text"> / месяц</span></div>              
+                <p class="body-text">Все основные функции уже включены в тариф</p>
+            </div>
+            <div class="price-info">
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Доступ к множеству VR-игр и впечатлений</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Ограниченный доступ к образовательному контенту</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Неораниченный доступ к инструментам архитектуры и проектирования</span>
+              </div>
+              <div class="price-features">
+                <img src="/dist/img/icon-check.svg" alt="галочка">
+                <span>Приоритетный доступ к эксклюзивным мероприятиям или рекламным акциям</span>
+              </div>
+            </div>
+            <a href="" class="btn-action">14 дней пробного периода</a>
+          </div>
+
+        </div>
+      </section>
+      
+      <section class="section-flex">
+        <div class="wrapper-left img-wrapper">
+          <div class="img-video-card">
+            <img class="img-left section-img" src="../dist/img/about-choose.png" alt="">
+            <img class="section-light-img" src="../dist/img/light.png" alt="">
+
+            <div class="video"> 
+              <img src="../dist/img/video-1.png" alt="Video 2" class="video-trigger" data-video="https://www.youtube-nocookie.com/embed/E0c8lJkh72I">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-wrapper">
+          <p class="caption">Почему мы</p>
+          <h5>Почему мы - идеальный выбор для Вашего погружения в виртуальную реальность</h5>
+          <div class="price-ditail">
+            <details>
+              <summary class="h7">
+                Увлеченная и опытная команда
+                <hr>
+              </summary>
+              <p class="body-text">Мы гордимся нашей командой экспертов по виртуальной реальности, которые увлечены виртуальной реальностью и стремятся выполнять работу высочайшего качества. Наша команда состоит из опытных разработчиков, дизайнеров и техников виртуальной реальности, которые имеют подтвержденный опыт создания захватывающих и увлекательных виртуальных приложений.</p>
+            </details>
+
+            <details>
+              <summary class="h7">
+                Индивидуальные решения
+                <hr>
+              </summary>
+              <p class="body-text">Мы признаем уникальность каждого клиента и считаем, что каждое погружение в виртуальную реальность должно быть таким же особенным. Мы готовы сотрудничать с вами, чтобы создать индивидуальное решение, которое отвечает вашим конкретным потребностям и целям.</p>
+            </details>
+
+            <details>
+              <summary class="h7">
+                Исключительное обслуживание клиентов
+                <hr>
+              </summary>
+              <p class="body-text">Мы гарантируем предоставление исключительного обслуживания клиентов на всех этапах - начиная с первоначальной консультации и заканчивая окончательной поставкой. Наша цель заключается в том, чтобы вы остались полностью удовлетворены каждым аспектом вашего виртуального опыта.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="main-wrapper">
+          <p class="caption">FAQ</p>
+          <h5>Часто задаваемые вопросы</h5>
+        </div>        
+        <div class="faq">
+          <details>
+            <summary class="h7">
+              Что такое виртуальная реальность?
+            </summary>
+            <hr>
+            <p class="body-text">Виртуальная реальность (VR) - это технология, которая использует гарнитуры или другие устройства для создания имитируемой среды. Пользователи могут взаимодействовать с этой средой так, как если бы она была реальной, обеспечивая полное погружение в игры, образование, тренинги и многое другое.</p>
+          </details>
+    
+          <details>
+            <summary class="h7">
+              Какие услуги VR вы предоставляете?
+            </summary>
+            <hr>
+            <p class="body-text">Мы используем передовое аппаратное и программное обеспечение виртуальной реальности, чтобы создавать высококачественные виртуальные впечатления, доступные по цене. Наша главная цель - обеспечить выдающееся обслуживание и поддержку клиентов, и наша команда всегда готова помочь с любыми вопросами или проблемами, с которыми вы можете столкнуться.</p>
+          </details>
+    
+          <details>
+            <summary class="h7">
+              Сколько стоят Ваши услуги?
+            </summary>
+            <hr>
+            <p class="body-text">Стоимость услкг зависит от тарифного плана, соответствующего вашим потребностям и бюджету.</p>
+          </details>
+    
+          <details>
+            <summary class="h7">
+              Нужно ли дополнительное оборудование для использования ваших услуг?
+            </summary>
+            <hr>
+            <p class="body-text">Для работы в VR потребуется гарнитуры или другие устройства для создания имитируемой среды.</p>
+          </details>
+    
+          <details>
+            <summary class="h7">
+              Пожноли воспользоваться VR перед покупкой?
+            </summary>            
+            <hr>
+            <p class="body-text">Да. Все тарифные планы имеют бесплатный пробный период, так что вы можете протестировать наш сервис и посмотреть, какой тарифный план подходит вам лучше всего.</p>
+          </details>
+        </div>
+      </section>  
+      
+      <section class="subscribe">
+        <div class="subscribe-wrapper">
+          <h3>Подпишись на рассылку новостей</h3>
+          <form action="">
+            <div class="subscribe-input-wrapper">
+                <img src="/dist/img/icon-message.svg" alt="">
+                <input type="email" placeholder="Ваш e-mail" name="" id="" required>
+                <button class="btn-subscribe"><img src="/dist/img/btn-sbcrb.svg" alt=""></button>
+            </div>
+        </form>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <div class="footer-wrapper">
         <div class="footer-logo-wrapper">
-          <img class="logo" src="../dist/img/logo.svg" alt="">
+          <img class="logo" src="../dist/img/logo.svg" alt="логотип">
           <div class="social">
             <a class="vk" href="https://vk.com/" target="_blank">
-              <img src="../dist/img/icon-bg.svg" alt="">
+              <img src="../dist/img/icon-bg.svg" alt="логотип vk">
             </a>
             <a class="tg" href="https://t.me/vrplace" target="_blank">
-              <img src="../dist/img/icon-bg.svg" alt="">
+              <img src="../dist/img/icon-bg.svg" alt="логотип telegram">
             </a>
             <a class="youtube" href="https://www.youtube.com/" target="_blank">
-              <img src="../dist/img/icon-bg.svg" alt="">
+              <img src="../dist/img/icon-bg.svg" alt="логотип youtube">
             </a>
             <a class="gh" href="https://derjugin.github.io/" target="_blank">
-              <img src="../dist/img/icon-gh.svg" alt="">
+              <img src="../dist/img/icon-gh.svg" alt="логотип github">
             </a>
           </div>
         </div>
@@ -107,14 +312,13 @@
               <img src="../dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
             </div>
           </div>
-          <script src="../dist/script.js"></script>
         </div>
       </div>
       <div class="footer-copyrignt body-text">
         <hr>
         <p>© Copyright 2023. Все права защищены</p>
       </div>   
-      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="">
-    </footer> 
+      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="фон в виде волнистых линий">
+    </footer>  
   </body>
 </html>

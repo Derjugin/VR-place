@@ -7,23 +7,21 @@
 
     <!-- bootstrap стили -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-   
-    <!-- Сброс стилей -->
-    <link href="../styles-reset.css" rel="stylesheet" />
+
     <!-- Мои стили -->
-    <link href="../styles.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/dist/script.js" defer></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     
   </head>
 
   <body>
-    <img class="bg" src="../dist/img/lines.png" alt="">
+    <img class="background-lines" src="../dist/img/lines.png" alt="фон в виде волнистых линий">
     <header class="header">
       <div class="header-wrapper">
         <a href="../">
-          <img class="logo" src="../dist/img/logo.svg" alt="">
+          <img class="logo" src="../dist/img/logo.svg" alt="логотип">
         </a>
         <a href="../contacts/" class="btn-action">Контакты</a>
         <div class="menu">
@@ -35,20 +33,22 @@
               <li><a href="../service/">Сервис</a></li>
               <li>
                 <div class="menu-first-level">Страницы
-                  <img src="../dist/img/arrow.svg" alt="">
+                  <img src="../dist/img/arrow.svg" alt="стрелка вниз">
                   <div class="menu-second-level">
                     <a href="../pricing/">Цены</a>
-                    <a href="../service/detail.html">Услуги</a>             
+                    <a href="../service/detail.html">Услуги</a> 
+                    <a href="../about/team.html">Наша команда</a>              
                   </div>
                 </div>
               </li>
-              <li><a class="active" href="../blog/">Блог</a></li>
+              <li><a  class="active" href="../blog/">Блог</a></li>
             </ul>
           </nav>
-          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt=""></span>
+          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt="мобильное меню"></span>
         </div>
       </div>
     </header>
+
 
     <main class="main">
       
@@ -163,22 +163,23 @@
       </section>
 
     </main>
+
     <footer class="footer">
       <div class="footer-wrapper">
         <div class="footer-logo-wrapper">
-          <img class="logo" src="../dist/img/logo.svg" alt="">
+          <img class="logo" src="../dist/img/logo.svg" alt="логотип">
           <div class="social">
             <a class="vk" href="https://vk.com/" target="_blank">
-              <img src="../dist/img/icon-bg.svg" alt="">
+              <img src="../dist/img/icon-bg.svg" alt="логотип vk">
             </a>
             <a class="tg" href="https://t.me/vrplace" target="_blank">
-              <img src="../dist/img/icon-bg.svg" alt="">
+              <img src="../dist/img/icon-bg.svg" alt="логотип telegram">
             </a>
             <a class="youtube" href="https://www.youtube.com/" target="_blank">
-              <img src="../dist/img/icon-bg.svg" alt="">
+              <img src="../dist/img/icon-bg.svg" alt="логотип youtube">
             </a>
             <a class="gh" href="https://derjugin.github.io/" target="_blank">
-              <img src="../dist/img/icon-gh.svg" alt="">
+              <img src="../dist/img/icon-gh.svg" alt="логотип github">
             </a>
           </div>
         </div>
@@ -209,14 +210,13 @@
               <img src="../dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
             </div>
           </div>
-          <script src="../dist/script.js"></script>
         </div>
       </div>
       <div class="footer-copyrignt body-text">
         <hr>
         <p>© Copyright 2023. Все права защищены</p>
       </div>   
-      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="">
+      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="фон в виде волнистых линий">
     </footer> 
   </body>
 </html>

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Tektur_Condensed Regular";
+    src: url("/dist/fonts/tektur/static/Tektur_Condensed-Regular.ttf");
+  }
+@font-face {
+    font-family: "Tektur_Condensed Medium";
+    src: url("/dist/fonts/tektur/static/Tektur_Condensed-Medium.ttf");
+  }
+@font-face {
+    font-family: "Tektur_Condensed SemiBold";
+    src: url("/dist/fonts/tektur/static/Tektur_Condensed-SemiBold.ttf");
+  }
+@font-face {
+    font-family: "Tektur_Condensed Bold";
+    src: url("/dist/fonts/tektur/static/Tektur_Condensed-Bold.ttf");
+  }
+@font-face {
+    font-family: "Tektur Regular";
+    src: url("/dist/fonts/tektur/static/Tektur-Regular.ttf");
+  }
+@font-face {
+    font-family: "Tektur Medium";
+    src: url("/dist/fonts/tektur/static/Tektur-Medium.ttf");
+  }
+@font-face {
+    font-family: "Tektur SemiBold";
+    src: url("/dist/fonts/tektur/static/Tektur-SemiBold.ttf");
+  }
+@font-face {
+    font-family: "Tektur Bold";
+    src: url("/dist/fonts/tektur/static/Tektur-Bold.ttf");
+}
