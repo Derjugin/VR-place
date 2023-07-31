@@ -188,6 +188,13 @@ a, a:link, a:visited {
   width: 101px;
 }
 
+/* КНОПКИ */
+
+button, input[type="submit"] {  
+  background: linear-gradient(90deg,#0cbaf1,#e95ce9);
+  border-radius: 0px;
+}
+
 .btn-action, 
 .btn  {
   display: inline-block;
@@ -222,7 +229,12 @@ a, a:link, a:visited {
 .btn {
     background: linear-gradient(90deg,#0cbaf1,#e95ce9);
 }
+button, input[type="submit"].btn-subscribe {  
+  background:none;
+}
 
+
+/* КНОПКИ END */
 
 /* ---------Мобильное меню  --------- */
 .overlay-content {
@@ -1242,10 +1254,8 @@ width: 50%;
   margin-bottom: 32px;
 }
 input {
-  width: 100%;
   border-radius: 4px;
   background: rgba(37, 37, 50, 0.60);
-  height: 50px;
   padding: 15px;
 }
 textarea {  

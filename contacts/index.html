@@ -108,29 +108,32 @@
           <p class="caption">Контакты</p>
           <h5>Будем на связи.</h5>
           <p class="body-text">В VRNas мы всегда рады получить информацию от наших клиентов и потенциальных заказчиков. Независимо от того, есть ли у вас вопрос о наших VR-сервисах, хотите ли вы обсудить потенциальный проект или просто поздороваться, мы здесь, чтобы помочь.</p>
-          <div class="inputs-wrapper">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Фамилия">
-            <input type="email" placeholder="Email">
-            <input type="tel" placeholder="Телефон">
-          </div>
-          <textarea class="message" type="text" placeholder="Сообщение" cols="30" rows="10"></textarea>
-
-          <a href="" class="btn">Отправить</a>
+          <form action="">
+            <div class="inputs-wrapper">
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Фамилия">
+              <input type="email" placeholder="Email" required>
+              <input type="tel" placeholder="Телефон">
+            </div>
+            <textarea class="message" type="text" placeholder="Сообщение" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" id="" value="Отправить">      
+          </form>
         </div>
       </section>
       <section class="map"> 
         <img src="../dist/img/map-bw.png" alt="">
       </section>
-      
+
       <section class="subscribe">
         <div class="subscribe-wrapper">
           <h3>Подпишись на рассылку новостей</h3>
-          <div class="subscribe-input-wrapper">
-            <img src="../dist/img/icon-message.svg" alt="">
-            <input type="email" placeholder="Ваш e-mail" name="" id="">
-            <button class="btn-subscribe"><img src="../dist/img/btn-sbcrb.svg" alt=""></button>
-          </div>
+          <form action="">
+            <div class="subscribe-input-wrapper">
+                <img src="../dist/img/icon-message.svg" alt="">
+                <input type="email" placeholder="Ваш e-mail" name="" id="" required>
+                <button class="btn-subscribe"><img src="../dist/img/btn-sbcrb.svg" alt=""></button>
+            </div>
+        </form>
         </div>
       </section>
 
@@ -149,7 +152,7 @@
             <a class="youtube" href="https://www.youtube.com/" target="_blank">
               <img src="../dist/img/icon-bg.svg" alt="">
             </a>
-            <a class="gh" href="" target="_blank">
+            <a class="gh" href="https://derjugin.github.io/" target="_blank">
               <img src="../dist/img/icon-gh.svg" alt="">
             </a>
           </div>
