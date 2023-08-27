@@ -84,28 +84,31 @@ prevButton.onclick = function() {
 // slider END
 
 // Форма обратной связи 
+document.querySelector('.btn').addEventListener('click', function(event) {
+  event.preventDefault(); // предотвращаем отправку формы
+  
+  let name = document.getElementById('name').value;
+  let secondname = document.getElementById('secondname').value;
+  let phone = document.querySelector('input[type="tel"]').value;
+  let email = document.querySelector('input[type="email"]').value;
+  let message = document.querySelector('.message').value;
 
-// Находим форму и кнопку отправки
-const form = document.querySelector('form');
-const submitButton = document.querySelector('.btn');
+  // Получаем значения полей формы в консоле
+  console.log('Имя: ' + name);
+  console.log('Фамилия: ' + secondname);
+  console.log('E-mail: ' + email);
+  console.log('Телефон: ' + phone);
+  console.log('Сообщение: ' + message);
 
-// Обрабатываем событие отправки формы
-form.addEventListener('submit', function(e) {
-  e.preventDefault(); // Отменяем стандартное поведение отправки формы
-
-  // Получаем значения полей формы
-  const firstName = form.querySelector('input[type="text"]:nth-child(1)').value;
-  const lastName = form.querySelector('input[type="text"]:nth-child(2)').value;
-  const phone = form.querySelector('input[type="tel"]').value;
-  const message = form.querySelector('.message').value;
-
-  // Выводим значения полей в консоль
-  console.log('Имя:', firstName);
-  console.log('Фамилия:', lastName);
-  console.log('Телефон:', phone);
-  console.log('Сообщение:', message);
+  // Получаем значения полей формы в окне
+  let popup = window.open('', '', 'width=350,height=350,top=' + (window.innerHeight/2 - 175) + ',left=' + (window.innerWidth/2 - 175)); //параметры окна
+  popup.document.write('<h1>Поля выведены в консоль</h1>');
+  popup.document.write('<p>Имя: ' + name + '</p>');
+  popup.document.write('<p>Фамилия: ' + secondname + '</p>');
+  popup.document.write('<p>E-mail: ' + email + '</p>');
+  popup.document.write('<p>Телефон: ' + phone + '</p>');
+  popup.document.write('<p>Сообщение: ' + message + '</p>');
 });
-
 // ФОС END
 
 

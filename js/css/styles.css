@@ -988,6 +988,7 @@ textarea {
   border-top: 10px solid #0cbaf1;
   border-right: 10px solid #0cbaf1;
   background: none;
+  cursor: pointer;
 }
 
 .next {
