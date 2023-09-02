@@ -24,6 +24,21 @@ CREATE TABLE `internet_shop`.`products` (
 PRIMARY KEY (`Products_ID`)) ENGINE = InnoDB;
 
 
+INSERT INTO `products` (
+`Products_ID`, `Products_Name`, `Description`, `Price`, `Category`, `Brand`, `Stock`) 
+VALUES (
+NULL, 'Газонокосилка', 'описание', '19999', 'сад', 'бренд', '99')
+
+
+SELECT * FROM `products` 
+WHERE 
+`Products_Name` = 'Газонокосилка' 
+AND 
+`Description` = 'описание' 
+AND 
+`Brand` LIKE 'бренд'
+
+
 CREATE TABLE `internet_shop`.`reviews` (
 `Reviews_ID` INT NOT NULL AUTO_INCREMENT , 
 `UserID` INT NOT NULL , 
