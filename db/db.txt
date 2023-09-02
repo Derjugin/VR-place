@@ -1,0 +1,43 @@
+CREATE TABLE `internet_shop`.`user` (
+`User_ID` INT NOT NULL AUTO_INCREMENT , 
+`Name` VARCHAR(120) NOT NULL , 
+`Surname` VARCHAR(120) NOT NULL , 
+`LastName` VARCHAR(120) NOT NULL , 
+`Email` VARCHAR(120) NOT NULL , 
+`BithDate` DATE NOT NULL , 
+`Phone` VARCHAR(20) NOT NULL , 
+`Address` VARCHAR(256) NOT NULL , 
+`sex` CHAR(1) NOT NULL , 
+`Role` TINYINT NOT NULL , 
+`Password` VARCHAR(120) NOT NULL , 
+PRIMARY KEY (`User_ID`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `internet_shop`.`products` (
+`Products_ID` INT NOT NULL AUTO_INCREMENT , 
+`Products_Name` VARCHAR(256) NOT NULL , 
+`Description` TEXT NULL , 
+`Price` INT NOT NULL , 
+`Category` VARCHAR(120) NOT NULL , 
+`Brand` VARCHAR NOT NULL , 
+`Stock` INT NOT NULL , 
+PRIMARY KEY (`Products_ID`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `internet_shop`.`reviews` (
+`Reviews_ID` INT NOT NULL AUTO_INCREMENT , 
+`UserID` INT NOT NULL , 
+`ProductID` INT NOT NULL , 
+`Rating` INT(1) NOT NULL , 
+`ReviewDate` DATE NOT NULL , 
+`Theme` VARCHAR(256) NULL , 
+`Comment` TEXT NULL , 
+PRIMARY KEY (`Reviews_ID`), INDEX (`UserID`), INDEX (`ProductID`)) ENGINE = InnoDB;
+
+
+CREATE TABLE `internet_shop`.`cart` (
+`Cart_ID` INT NOT NULL AUTO_INCREMENT , 
+`UserID` INT NOT NULL , 
+`ProductID` INT NOT NULL , 
+`Quantity` INT NOT NULL , 
+PRIMARY KEY (`Cart_ID`), INDEX (`UserID`), INDEX (`ProductID`)) ENGINE = InnoDB;
