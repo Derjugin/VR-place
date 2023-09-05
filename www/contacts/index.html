@@ -7,6 +7,7 @@
     <!-- Мои стили -->
     <link href="/css/main.css" rel="stylesheet" />
     <script src="/dist/script.js" defer></script>
+    <script src="/dist/contacts.js" type="text/javascript" defer></script>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
 
@@ -23,19 +24,18 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="overlay-content body-text">
               <li><a href="/">Главная</a></li>
+              <li><a href="/portfolio/">Портфолио</a></li>
               <li><a href="/about/">О нас</a></li>
               <li><a href="/service/">Сервис</a></li>
               <li>
-                <div class="menu-first-level">Страницы
+                <div class="first-level">Услуги
                   <img src="/dist/img/arrow.svg" alt="стрелка вниз">
-                  <div class="menu-second-level">
+                  <div class="second-level">
                     <a href="/pricing/">Цены</a>
-                    <a href="/service/detail.html">Услуги</a>    
                     <a href="/about/team.html">Наша команда</a>          
                   </div>
                 </div>
               </li>
-              <li><a href="/blog/">Блог</a></li>
             </ul>
           </nav>
           <span class="burger" onclick="openNav()"><img src="/dist/img/burger.svg" alt="мобильное меню"></span>
@@ -61,42 +61,53 @@
       </section>
 
       <section class="contact-wrapper">
-        <div class="contact-card">
-          <img src="/dist/img/icon-mail.svg" alt="иконка mail">
-          <div class="contact-info">
-            <div class="caption">
-              E-mail
-            </div>
-            <div class="h7">
-              Support@VRNas.com
-            </div>
-          </div>
-        </div>
 
-        <div class="contact-card">
-          <img src="/dist/img/icon-geo.svg" alt="иконка геопозиции">
-          <div class="contact-info">
-            <div class="caption">
-              Адрес
-            </div>
-            <div class="h7">
-              125009 Россия, Москва, Романов переулок, 2с1
+
+      <div class="slider">
+        <div class="contacts-sl">
+          <div class="slider-image show contact-card">
+            <img src="/dist/img/icon-mail.svg" alt="иконка mail">
+            <div class="contact-info">
+              <div class="caption">
+                E-mail
+              </div>
+              <div class="heading-7">
+                vr-place@mail.ru
+              </div>
             </div>
           </div>
+
+          <div class="slider-image contact-card">
+            <img src="/dist/img/icon-geo.svg" alt="иконка геопозиции">
+            <div class="contact-info">
+              <div class="caption">
+                Адрес
+              </div>
+              <div class="heading-7">
+                125009 Россия, Москва, Романов переулок, 2с1
+              </div>
+            </div>
+          </div>
+          
+          <div class="slider-image contact-card">
+            <img src="/dist/img/icon-call.svg" alt="иконка телефона">
+            <div class="contact-info">
+              <div class="caption">
+                Телефон
+              </div>
+              <div class="heading-7">
+                +7 (495) 123 45 67
+              </div>
+            </div>
+          </div>  
         </div>
-        
-        <div class="contact-card">
-          <img src="/dist/img/icon-call.svg" alt="иконка телефона">
-          <div class="contact-info">
-            <div class="caption">
-              Телефон
-            </div>
-            <div class="h7">
-              +7 (495) 123 45 67
-            </div>
-          </div>
-        </div>        
-      </section>
+        <div class="actions">
+            <input type="button" class="prev" value="">
+            <input type="button" class="next" value="">
+        </div>
+      </div>
+
+      </section> 
 
             
       <section class="about-us">
@@ -107,11 +118,11 @@
         <div class="main-wrapper">
           <p class="caption">Контакты</p>
           <h5>Будем на связи.</h5>
-          <p class="body-text">В VRNas мы всегда рады получить информацию от наших клиентов и потенциальных заказчиков. Независимо от того, есть ли у вас вопрос о наших VR-сервисах, хотите ли вы обсудить потенциальный проект или просто поздороваться, мы здесь, чтобы помочь.</p>
+          <p class="body-text">В VR-Place мы всегда рады получить информацию от наших клиентов и потенциальных заказчиков. Независимо от того, есть ли у вас вопрос о наших VR-сервисах, хотите ли вы обсудить потенциальный проект или просто поздороваться, мы здесь, чтобы помочь.</p>
           <form action="">
             <div class="inputs-wrapper">
-              <input type="text" placeholder="Имя">
-              <input type="text" placeholder="Фамилия">
+              <input type="text" id="name" placeholder="Имя">
+              <input type="text" id="secondname" placeholder="Фамилия">
               <input type="email" placeholder="Email" required>
               <input type="tel" placeholder="Телефон">
             </div>
@@ -121,7 +132,7 @@
         </div>
       </section>
       <section class="map"> 
-        <img src="/dist/img/map-bw.png" alt="">
+        <div id="map"></div>
       </section>
 
       <section class="subscribe">
@@ -131,10 +142,11 @@
             <div class="subscribe-input-wrapper">
                 <img src="/dist/img/icon-message.svg" alt="">
                 <input type="email" placeholder="Ваш e-mail" name="" id="" required>
-                <button class="btn-subscribe"><img src="/dist/img/btn-sbcrb.svg" alt=""></button>
+                <button class="btn-subscribe"><img src="/dist/img/btn-sbcrb.svg" alt="значек подписаться"><span>подписаться</span></button>
             </div>
         </form>
         </div>
+
       </section>
 
     </main>
@@ -158,27 +170,25 @@
           </div>
         </div>
         <div class="footer-menu-wrapper body-text">
-          <ul class="h6">Основное
-            <li><a href="/">Главная</a></li>
-            <li><a href="/pricing/">Цены</a></li>
-            <li><a href="/service/">Сервис</a></li>
-            <li><a href="/blog/">Блог</a></li>
-            <li><a href="/our-team/">Наша команда</a></li>
+          <ul class="heading-6">Основное
+            <li><a href="../">Главная</a></li>
+            <li><a href="../pricing/">Цены</a></li>
+            <li><a href="../service/">Сервис</a></li>
+            <li><a href="../blog/">Блог</a></li>
+            <li><a href="../about/team.html">Наша команда</a></li>
           </ul>
-          <ul class="h6">Поддержка
-            <li><a href="/about/">О нас</a></li>
-            <li><a href="/contacts/">Контакты</a></li>
-            <li><a href="/FAQ/">FAQ</a></li>
-            <li><a href="/terms/">Пользовательское соглашение</a></li>
-            <li><a href="/policy/">Политика конфиденциальности</a></li>
+          <ul class="heading-6">Поддержка
+            <li><a href="../about/">О нас</a></li>
+            <li><a href="../portfolio/">Портфолио</a></li>
+            <li><a href="../contacts/">Контакты</a></li>
           </ul>
-          <div class="help h6">Нужна помощь?
+          <div class="help heading-6">Нужна помощь?
             <div class="help-wrapper body-text">
               <img src="/dist/img/location.svg" alt="значек локации">125009 Россия, Москва, Романов переулок, 2с1
 
             </div>
             <div class="help-wrapper body-text">
-              <img src="/dist/img/message.svg" alt="значек сообщения">Support@VRNas.com
+              <img src="/dist/img/message.svg" alt="значек сообщения">vr-place@mail.ru
             </div>
             <div class="help-wrapper body-text">
               <img src="/dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
@@ -192,5 +202,9 @@
       </div>   
       <img class="footer-bg" src="/dist/img/bg-footer.png" alt="фон в виде волнистых линий">
     </footer> 
+    <!-- ya map -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=2577185e-6ec5-4ee5-9794-bd6dcf857e29" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="/dist/route_panel_control.js" type="text/javascript"></script>
   </body>
 </html>

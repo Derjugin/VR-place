@@ -7,6 +7,7 @@
     <!-- Мои стили -->
     <link href="./css/main.css" rel="stylesheet" />
     <script src="./dist/script.js" defer></script>
+    <script src="/dist/video.js" defer></script>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
 
@@ -14,31 +15,31 @@
     <img class="background-lines" src="./dist/img/lines.png" alt="волны в углу">
     <header class="header">
       <div class="header-wrapper">
-        <a href="#">
-          <img class="logo" src="./dist/img/logo.svg" alt="логотип">
+        <a href="/">
+          <img class="logo" src="/dist/img/logo.svg" alt="логотип">
         </a>
-        <a href="./contacts/" class="btn-action">Контакты</a>
+        <a href="/contacts/" class="btn-action">Контакты</a>
         <div class="menu">
           <nav id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="overlay-content body-text">
-              <li><a class="active" href="#">Главная</a></li>
-              <li><a href="./about/index.html">О нас</a></li>
-              <li><a href="./service/index.html">Сервис</a></li>
+              <li><a href="/">Главная</a></li>
+              <li><a href="/portfolio/">Портфолио</a></li>
+              <li><a href="/about/">О нас</a></li>
+              <li><a href="/service/">Сервис</a></li>
               <li>
-                <div class="menu-first-level">Страницы
-                  <img src="./dist/img/arrow.svg" alt="стрелка вниз">
-                  <div class="menu-second-level">
-                    <a href="./pricing/index.html">Цены</a>
-                    <a href="./service/detail.html">Услуги</a>  
-                    <a href="./about/team.html">Наша команда</a>           
+                <div class="first-level">Прочее
+                  <img src="/dist/img/arrow.svg" alt="стрелка вниз">
+                  <div class="second-level">
+                    <a href="/pricing/">Цены</a>
+                    <a href="/about/team.html">Наша команда</a>     
+                    <a href="/blog/">Блог</a>     
                   </div>
                 </div>
               </li>
-              <li><a href="./blog/index.html">Блог</a></li>
             </ul>
           </nav>
-          <span class="burger" onclick="openNav()"><img src="./dist/img/burger.svg" alt="меню"></span>
+          <span class="burger" onclick="openNav()"><img src="/dist/img/burger.svg" alt="мобильное меню"></span>
         </div>
       </div>
     </header>
@@ -49,17 +50,17 @@
             <div class="title-desc-content">
               <div class="title-desc">
                 <h1 class="heading">
-                  Погрузись в виртуальную реальность
+                  Узнай больше обо мне
                 </h1>
-                <p class="body-text">Переживите незабываемые события в виртуальной реальности. Оживите свои мероприятия, с помощью наших услуг виртуальной реальности</p>
+                <p class="body-text">Подробную информации о моих работах, проектах и опыте можно найти в моем портфоли</p>
               </div>
-              <a href="" class="btn">Подробности</a>
+              <a href="/portfolio/" class="btn">Подробности</a>
             </div>
             <div class="happy-cliens-content">
               <div class="happy-cliens">
                 <img src="./dist/img/clients.svg" alt="фото клиентов">
                 <div class="happy-cliens-text">
-                  <span class="amount">32k+                
+                  <span class="amount">12k+                
                     <img src="./dist/img/line.svg" alt="подчеркивание">   
                   </span>
                   <span class="body-text">Счастливых клиентов</span>
@@ -91,19 +92,19 @@
         <div class="wrapper-why-choose-us">
           <div class="card">
             <img src="./dist/img/icon-expertise.svg" alt="иконка - vr очки">
-            <p class="h7">Опыт</p>
+            <p class="heading-7">Опыт</p>
             <p class="body-text-secondary">Наша команда состоит из опытных разработчиков, дизайнеров и техников виртуальной реальности, которые увлечены виртуальной реальностью и стремятся выполнять качественную работу и предоставлять лучший сервис.
             </p>
           </div>
           <div class="card">
             <img src="./dist/img/icon-cust.svg" alt="иконка - персонализации">
-            <p class="h7">Персонализация</p>
+            <p class="heading-7">Персонализация</p>
             <p class="body-text-secondary">Мы признаем уникальность каждого клиента и считаем, что каждое погружение в виртуальную реальность должно быть таким же особенным. Мы готовы сотрудничать с вами, чтобы создать индивидуальное решение, которое отвечает вашим конкретным потребностям и целям.
             </p>
           </div>
           <div class="card">
             <img src="./dist/img/icon-service.svg" alt="иконка - vr очки на голове">
-            <p class="h7">Сервис</p>
+            <p class="heading-7">Сервис</p>
             <p class="body-text-secondary">Мы гарантируем предоставление исключительного обслуживания клиентов на всех этапах - начиная с первоначальной консультации и заканчивая окончательной поставкой. Наша цель заключается в том, чтобы вы остались полностью удовлетворены каждым аспектом вашего виртуального опыта.
             </p>
           </div>
@@ -122,7 +123,7 @@
         <div class="main-wrapper">
           <p class="caption">О нас</p>
           <h5>Придайте вашим мероприятиям новый уровень интерактивности.</h5>
-          <p class="body-text">VRNas является лидирующим поставщиком услуг виртуальной реальности в сферах образования, развлечений, архитектуры и мероприятий. Мы стремимся распространить преимущества виртуальной реальности на всех, позволяя им исследовать новые миры, получать новые знания и переживать события в совершенно новом ракурсе</p>
+          <p class="body-text">VR-Place является лидирующим поставщиком услуг виртуальной реальности в сферах образования, развлечений, архитектуры и мероприятий. Мы стремимся распространить преимущества виртуальной реальности на всех, позволяя им исследовать новые миры, получать новые знания и переживать события в совершенно новом ракурсе</p>
           <div class="checkbox">
             <div class="checkbox-wrapper">
               <img src="./dist/img/check-box.svg" alt="иконча голочки">
@@ -141,114 +142,16 @@
         </div>
       </section>
 
-      <section class="service">
+      <section class="how-start">
         <div class="main-wrapper">
-          <div class="service-title">
-            <p class="caption">Сервис</p>
-            <h5>О наших услугах.</h5>
-          </div>
-          <p class="body-text">Мы используем передовое аппаратное и программное обеспечение виртуальной реальности, чтобы создавать высококачественные виртуальные впечатления, доступные по цене. Наша главная цель - обеспечить выдающееся обслуживание и поддержку клиентов, и наша команда всегда готова помочь с любыми вопросами или проблемами, с которыми вы можете столкнуться.</p>
-        </div>
-        <div class="service-cards">
-          <div class="service-card">
-            <div class="card-wrapper">
-              <img src="./dist/img/icon-software.svg" alt="иконка VR разработки - экран монитора">
-              <p class="h7">VR разработки</p>
-              <p class="body-text-secondary">От концепции до создания – наша команда VR разработчиков воплотит Ваше видение в жизнь.
-              </p>
-              <div class="btn-wrapper">
-                <a href="" class="btn-action">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="service-card">
-            <div class="card-wrapper">
-              <img src="./dist/img/icon-design.svg" alt="иконка VR дизайн - лампочка">
-              <p class="h7">VR дизайн</p>
-              <p class="body-text-secondary">Наши талантливые VR дизайнеры создадут захватывающую и увлекательную среду, которая очарует Вашу аудиторию..
-              </p>
-              <div class="btn-wrapper">
-                <a href="" class="btn-action">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="service-card">
-            <div class="card-wrapper">
-              <img src="./dist/img/icon-review-2.svg" alt="иконка VR колсалтинга - облако чата">
-              <p class="h7">VR колсалтинг</p>
-              <p class="body-text-secondary">Наши VR консультанты будут работать с вами, чтобы убедиться, что ваш опыт виртуальной реальности соответствует вашим целям и превосходит ваши ожидания.
-              </p>
-              <div class="btn-wrapper">
-                <a href="" class="btn-action">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="service-card">
-            <div class="card-wrapper">
-              <img src="./dist/img/icon-video-console.svg" alt="иконка игры - геймпад">
-              <p class="h7">VR игры</p>
-              <p class="body-text-secondary">Мы предлагаем широкий выбор VR-игр, которые подходят для игроков любого возраста и уровня подготовки.
-              </p>
-              <div class="btn-wrapper">
-                <a href="" class="btn-action">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="service-card">
-            <div class="card-wrapper">
-              <img src="./dist/img/icon-party.svg" alt="иконка мероприятия - календарь с колпаком">
-              <p class="h7">VR мероприятия</p>
-              <p class="body-text-secondary">Сделайте свое следующее мероприятие незабываемым, воспользовавшись нашими VR услугами по организации ивентов.
-              </p>
-              <div class="btn-wrapper">
-                <a href="" class="btn-action">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <div class="service-card">
-            <div class="card-wrapper">
-              <img src="./dist/img/icon-theatre.svg" alt="иконка развлечения - театральные маски">
-              <p class="h7">VR развлечения</p>
-              <p class="body-text-secondary">Cоздать VR квест-комнату или прогулку в тематическом парке в виртуальной реальности – у нас есть опыт и знания, чтобы это реализовать.
-              </p>
-              <div class="btn-wrapper">
-                <a href="" class="btn-action">Подробнее</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="why-choose-us">
-        <img src="./dist/img/man-3.png" alt="мужчина в vr">
-        <div class="main-wrapper">
-          <p class="caption">Почему мы</p>
-          <h5>Почему мы - идеальный выбор для Вашего погружения в виртуальную реальность</h5>
-          <details>
-            <summary class="h7">
-              Увлеченная и опытная команда
-              <hr>
-            </summary>
-            <p class="body-text">Мы гордимся нашей командой экспертов по виртуальной реальности, которые увлечены виртуальной реальностью и стремятся выполнять работу высочайшего качества. Наша команда состоит из опытных разработчиков, дизайнеров и техников виртуальной реальности, которые имеют подтвержденный опыт создания захватывающих и увлекательных виртуальных приложений.</p>
-          </details>
-
-          <details>
-            <summary class="h7">
-              Индивидуальные решения
-              <hr>
-            </summary>
-            <p class="body-text">Мы признаем уникальность каждого клиента и считаем, что каждое погружение в виртуальную реальность должно быть таким же особенным. Мы готовы сотрудничать с вами, чтобы создать индивидуальное решение, которое отвечает вашим конкретным потребностям и целям.</p>
-          </details>
-
-          <details>
-            <summary class="h7">
-              Исключительное обслуживание клиентов
-              <hr>
-            </summary>
-            <p class="body-text">Мы гарантируем предоставление исключительного обслуживания клиентов на всех этапах - начиная с первоначальной консультации и заканчивая окончательной поставкой. Наша цель заключается в том, чтобы вы остались полностью удовлетворены каждым аспектом вашего виртуального опыта.</p>
-          </details>
-        </div>
-      </section>
+          <p class="caption">Узнай больше</p>
+          
+          <a href="/about/team.html" class="btn">Фотогалерея с нашей командой</a>
+          <a href="/service/" class="btn">Услуги</a>
+          <a href="/pricing/" class="btn">Цены</a>
+  
+        </div>     
+      </section>  
 
       <section class="how-start">
         <div class="main-wrapper">
@@ -298,27 +201,25 @@
           </div>
         </div>
         <div class="footer-menu-wrapper body-text">
-          <ul class="h6">Основное
+          <ul class="heading-6">Основное
             <li><a href="./">Главная</a></li>
             <li><a href="./pricing/">Цены</a></li>
             <li><a href="./service/">Сервис</a></li>
             <li><a href="./blog/">Блог</a></li>
-            <li><a href="./our-team/">Наша команда</a></li>
+            <li><a href="./about/team.html">Наша команда</a></li>
           </ul>
-          <ul class="h6">Поддержка
+          <ul class="heading-6">Поддержка
             <li><a href="./about/">О нас</a></li>
+            <li><a href="./portfolio/">Портфолио</a></li>
             <li><a href="./contacts/">Контакты</a></li>
-            <li><a href="./FAQ/">FAQ</a></li>
-            <li><a href="./terms/">Пользовательское соглашение</a></li>
-            <li><a href="./policy/">Политика конфиденциальности</a></li>
           </ul>
-          <div class="help h6">Нужна помощь?
+          <div class="help heading-6">Нужна помощь?
             <div class="help-wrapper body-text">
               <img src="./dist/img/location.svg" alt="значек локации">125009 Россия, Москва, Романов переулок, 2с1
 
             </div>
             <div class="help-wrapper body-text">
-              <img src="./dist/img/message.svg" alt="значек сообщения">Support@VRNas.com
+              <img src="./dist/img/message.svg" alt="значек сообщения">vr-place@mail.ru
             </div>
             <div class="help-wrapper body-text">
               <img src="./dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67

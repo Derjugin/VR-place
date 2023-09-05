@@ -38,20 +38,6 @@ h5 {
   font-size: 32px;
 }
 
-.h6 {
-  font-size: 16px;
-  color: #fff;
-}
-
-.h7 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.h8 {
-
-}
-
 a:visited.active, a.active {
   color: #fff;
   font-family: 'Tektur Medium', Arial, Helvetica, sans-serif;
@@ -65,6 +51,7 @@ hr {
 details {
   width: 100%;
   margin-bottom: 48px;
+  cursor: pointer;
 }
 
 details:last-child {
@@ -79,6 +66,16 @@ details:last-child {
 .heading-9 {
   font-size: 18px;
   color: #ffffff;
+}
+
+.heading-6 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.heading-7 {
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 .text-big {
   font-size: 60px;
@@ -108,7 +105,6 @@ a, a:link, a:visited {
 .body-text {
   font-size: 15px;
   line-height: 28px;
-  /* color: #D1D1D1; */
   color: #a5a5a5;
 }
 
@@ -188,7 +184,9 @@ button, input[type="submit"] {
 button, input[type="submit"].btn-subscribe {  
   background:none;
 }
-
+.btn-subscribe span {
+  display: none;
+}
 
 /* КНОПКИ END */
 
@@ -206,7 +204,8 @@ height: 114px;
 }
 
 .menu-first-level {
-  color: #D1D1D1
+  color: #D1D1D1;  
+  cursor: pointer;
 }
 
 .menu-second-level {
@@ -221,6 +220,41 @@ height: 114px;
   transition: 1s;
   opacity: 0;
 }
+
+/* меню по нажатию */
+.first-level {
+  position: relative;
+  color: #D1D1D1;  
+  cursor: pointer;
+}
+
+
+.second-level {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 200px;
+  padding: 14px;
+  gap: 5px;
+  left: 0;
+  transition: 1s;
+  opacity: 0;
+  pointer-events: none; 
+  transition: opacity 0.5s ease; 
+}
+
+.second-level.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.second-level a {
+  color: #D1D1D1;
+}
+
+/* конец меню по нажатию */
 
   .menu-first-level:hover > .menu-second-level {
     position: relative;
@@ -246,6 +280,13 @@ height: 114px;
   transition: 1s;
 }
 
+.first-level img {
+  position: relative;
+  width: 20px;
+  top: 4px;
+  transition: 1s;
+}
+
 .menu-first-level:hover img {
   transform: rotate(180deg);
 }
@@ -263,12 +304,6 @@ height: 114px;
   top: 0;
   right: 0;
   z-index: -1;
-}
-
-.main {
-}
-
-.main-content {
 }
 
 .hero {
@@ -291,9 +326,6 @@ height: 114px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.happy-cliens-content {
 }
 
 .happy-cliens {
@@ -400,9 +432,6 @@ height: 114px;
 }
 /* ------------ Тестовые варианты плеера КОНЕЦ------------ */
 
-
-.img-content {
-}
 .man-img {
   position: relative;
   z-index: -1;
@@ -522,9 +551,6 @@ height: 114px;
   transform: scale(1.2)
 }
 
-.subscribe {
-}
-
 .subscribe-wrapper {
   display: flex;
   padding: 30px 70px;
@@ -554,9 +580,6 @@ height: 114px;
   background: none;
   width: auto;
   padding: 0;
-}
-
-.btn-subscribe {
 }
 
 /* about-us */
@@ -601,15 +624,44 @@ height: 114px;
   gap: 12px;
 }
 
+/* portfolio */
 
-.body-text-info {
+.blog-post li {
+  margin-bottom: 15px;
 }
+
+.tools {
+  width: 33%;
+  min-width: 200px;
+  padding: 5px;
+}
+
+.tools img {
+  height: 80px;
+}
+
+.carousel-indicators {
+  bottom: -40px;
+}
+
+.info h2 {
+  background: linear-gradient(90deg,#0cbaf1,#e95ce9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog-wrapper .card {
+  height: 460px;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* portfolio end */
 
 
 /* service */
-
-.service {
-}
 
 .service-cards {
   display: grid;
@@ -697,7 +749,8 @@ height: 114px;
   position: relative;
 }
 
-.member-bg {
+.why-we h5 {  
+  margin-bottom: 20px;
 }
 
   .member-bg::before {
@@ -733,9 +786,6 @@ height: 114px;
   width: 100%;
 }
 
-.partners {
-}
-
 .faq {  
   max-width: 790px;
   width: 100%;
@@ -749,7 +799,7 @@ height: 114px;
   border: 1px solid rgba(255,255,255, 0.3);
 }
 
-.faq .h7 {
+.faq .heading-7 {
   font-size: 20px;
   margin-bottom: 0;
   padding: 30px;
@@ -804,7 +854,9 @@ height: 114px;
 }
 
 .members .member-img img {
-  width: 100%;
+  width: 100%;  
+  object-fit: cover;
+  max-height: 537px;
 }
 .member-soc {
   position: absolute;
@@ -847,7 +899,7 @@ height: 114px;
 }
 
 .contact-wrapper {
-  display: grid;
+  /* display: grid; */
   gap: 32px;
 }
 
@@ -897,6 +949,113 @@ textarea {
   height: 50px;
   padding: 15px;
 }
+
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts-sl {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.slider-image {
+  width: 100%;
+  height: 300px;
+
+  position: absolute;
+  top: 0;
+  
+  object-fit: cover;
+  opacity: 0;
+
+  transition: 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.actions {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.next,
+.prev {
+  width: 60px;
+  height: 60px;
+  border-top: 10px solid #0cbaf1;
+  border-right: 10px solid #0cbaf1;
+  background: none;
+  cursor: pointer;
+}
+
+.next {
+  transform: rotate(45deg);
+}
+
+.prev {
+  transform: rotate(-135deg);
+}
+
+.next:hover,
+.prev:hover {
+  border-top: 10px solid #e95ce9;
+  border-right: 10px solid #e95ce9;
+}
+
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #0cbaf1;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #e95ce9;
+}
+.owl-theme .owl-nav {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.owl-theme .owl-dots {
+  position: absolute;
+  bottom: -50px;
+}
+
+#map {
+width: 100%;
+height: 600px;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+ & Safari 6+ */
+}
+
 /* ========== CONTACTS END========== */
 
 
@@ -961,15 +1120,14 @@ textarea {
   margin-bottom: 32px;
 }
 
-.price-features {
-}
-
 .pr-card .btn-action {
   text-align: center;
 }
 .price-ditail {
+  width: 100%;
   margin-top: 32px;
 }
+
 /* ========== PRICING END========== */
 
 
@@ -1003,7 +1161,6 @@ textarea {
 
 .footer-menu-wrapper ul{
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 16px;
@@ -1077,124 +1234,22 @@ textarea {
 
 /* ========== АДАПТИВЫ ========== */
 
-@media (max-width: 570px) {
-  .happy-cliens-text {  
-    width: 100px;
+@media (min-width: 800px) and (max-width:1123px) {
+  .card-wrapper {
+    height: 432px;
+  }
+  
+  .price-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 }
 
-@media (max-width: 799px) {
-
-  .heading {
-      font-size: 48px;
-  }
-    ul {
-    flex-direction: column;
-  }
-  .burger {
-      display: block;
-      cursor: pointer;
-  }
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-
-  .overlay-content {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    top: 100px;
-    margin: 30px;
-    gap: 20px;
-  }
-
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 50px;
-  }
-
-  .img-content {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-  }
-
-  .man-img {
-    right: -120px;
-    height: 422px;
-  }
-
-  .img-wrapper {
-    text-align: right;
-  }
-
-  .section-img {
-    height: 454px;
-  }
-
-  .section-flex .wrapper-right, 
-  .section-flex .wrapper-left {
-    justify-content: center;
-  }
-
-  .subscribe-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-  }
-
-  .happy-cliens {
-    margin-bottom: 120px;
-  }
-
-  .wrapper-why-choose-us {  
-    flex-direction: column;
-  }
-
-  .team-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .our-team .service-title {
-    text-align: center;
-  }  
-
-  .our-team .main-wrapper {
-    align-items: center;    
-  }
-    
-  .footer-wrapper {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .footer-logo-wrapper {
-    flex-direction: row;
-    margin-bottom: 70px;
-  }
-}
-
-
-@media (min-width: 500px) and (max-width: 900px) {
+@media (min-width: 901px) {
   .members {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
 
 @media (min-width: 800px) {
   main {
@@ -1217,22 +1272,25 @@ textarea {
     max-width: 600px;
  }
  
- .overlay {
-    width: 100%;
- }
+  .overlay {
+      width: 100%;
+  }
 
- .overlay-content {
+  .overlay-content {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-evenly;
-
- }
- 
+  }
+  
   .menu-first-level:hover > .menu-second-level {
     position: absolute;
     margin-top: 25px;
     margin-left: -48px;
+  }
+
+.second-level {
+    position: absolute;
   }
 
   .burger {
@@ -1240,7 +1298,7 @@ textarea {
   }
   
   .closebtn {
-    display: none !important;
+    display: none;
   }
 
   .btn-action {
@@ -1266,9 +1324,6 @@ textarea {
     width: 520px;
   }
   
-  .how-start {  
-  }
-  
   .how-start .main-wrapper {
     align-items: center;
     width: auto;
@@ -1277,12 +1332,18 @@ textarea {
   .how-start h5 {
     text-align: center;
   }
+
   .section-flex {
     display: flex;
     gap: 60px;
 
   }  
 
+  .how-start .btn {
+    background: linear-gradient(90deg,#0cbaf1,#e95ce9);
+    width: 320px;
+    text-align: center;
+  }
   .hero { 
     display: flex;
     flex-direction: row;
@@ -1442,21 +1503,138 @@ textarea {
   .footer-copyrignt {
     max-width: 1280px;
   }
-}
 
-@media (min-width: 901px) {
-  .members {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 800px) and (max-width:1123px) {
-  .card-wrapper {
-    height: 432px;
+  .slider {
+    width: 700px;
   }
   
-  .price-cards {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  .contacts-sl {
+    width: 700px;
+  }
+  
+  .slider-image {
+    width: 700px;
   }
 }
+
+@media (min-width: 500px) and (max-width: 900px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 799px) {
+
+  .heading {
+      font-size: 48px;
+  }
+    ul {
+    flex-direction: column;
+  }
+  .burger {
+      display: block;
+      cursor: pointer;
+  }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    top: 100px;
+    margin: 30px;
+    gap: 20px;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 50px;
+  }
+
+  .img-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .second-level.open {
+    position: relative;
+  }
+
+  .man-img {
+    right: -120px;
+    height: 422px;
+  }
+
+  .img-wrapper {
+    text-align: right;
+  }
+
+  .section-img {
+    height: 454px;
+  }
+
+  .section-flex .wrapper-right, 
+  .section-flex .wrapper-left {
+    justify-content: center;
+  }
+
+  .subscribe-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .happy-cliens {
+    margin-bottom: 120px;
+  }
+
+  .wrapper-why-choose-us {  
+    flex-direction: column;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-team .service-title {
+    text-align: center;
+  }  
+
+  .our-team .main-wrapper {
+    align-items: center;    
+  }
+    
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-logo-wrapper {
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 570px) {
+  .happy-cliens-text {  
+    width: 100px;
+  }
+}
+

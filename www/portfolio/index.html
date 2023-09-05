@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" /> 
+    <!-- bootstrap стили -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <title>Портфолио</title>   
+    <!-- Мои стили -->
+    <link href="/css/main.css" rel="stylesheet" />
+    <script src="/dist/script.js" defer></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <img class="background-lines" src="../dist/img/lines.png" alt="фон в виде волнистых линий">
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="/">
+          <img class="logo" src="/dist/img/logo.svg" alt="логотип">
+        </a>
+        <a href="/contacts/" class="btn-action">Контакты</a>
+        <div class="menu">
+          <nav id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="overlay-content body-text">
+              <li><a href="/">Главная</a></li>
+              <li><a class="active"  href="/portfolio/">Портфолио</a></li>
+              <li><a href="/about/">О нас</a></li>
+              <li><a href="/service/">Сервис</a></li>
+              <li>
+                <div class="first-level">Прочее
+                  <img src="/dist/img/arrow.svg" alt="стрелка вниз">
+                  <div class="second-level">
+                    <a href="/pricing/">Цены</a>
+                    <a href="/about/team.html">Наша команда</a>     
+                    <a href="/blog/">Блог</a>     
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <span class="burger" onclick="openNav()"><img src="/dist/img/burger.svg" alt="мобильное меню"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      
+      <section class="pages info">
+        <div class="title-desc-content">
+          <div class="title-desc">
+            <h1 class="heading">
+              Портфолио
+              <img class="ellipse-img" src="../dist/img/ellipse.png" alt="">
+            </h1>
+          </div>
+          <div class="pagination">
+            <a href="../" class="pagination-home">Главная</a> > <a href="#" class="pagination-level">Портфолио</a>
+          </div>
+        </div>
+        <hr>
+      </section>
+
+      <section class="portfolio">
+        <div class="row g-5">
+
+          <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
+              <div class="p-4 mb-3 bg-body-tertiary rounded">
+                <h4 class="fst-italic">About</h4>
+                <img src="/dist/img/portfol.png" alt="">
+                <ul class="list-unstyled mt-4 text-dark">
+                  <li>
+                    Дата рождения: 14.01.1987   
+                  </li>
+                  <li>
+                    Образование: Высшее   
+                  </li>
+                  <li>
+                    Опыт работы: 10+   
+                  </li>
+                </ul>
+              </div>
+      
+              <div>
+
+              </div>      
+            </div>
+          </div>
+          
+          <div class="col-md-8">
+
+            <h2 class="pb-4 mb-5 fst-italic border-bottom">
+              Привет, я Дерюгин Александр,<br> Маркетолог, Front-end разработчик<br>и веб-дизайнер.
+            </h2> 
+            <div class="info d-flex flex-wrap justify-content-center">
+              <div class="w-50 text-center">
+                <h2 class="fst-italic">
+                  12
+                </h2>               
+                <p>ЛЕТ СТАЖА</p>
+              </div>
+              
+              <div class="w-50 text-center ">
+                <h2 class="fst-italic">
+                  7
+                </h2>               
+                <p>САЙТОВ ЗАПУЩЕНО</p>
+              </div>
+
+              <div class="w-50 text-center">
+                <h2 class="fst-italic">
+                  500k+
+                </h2>               
+                <p>ПОСЕТИТЕЛЕЙ ПРИВЛЕЧЕНО</p>
+              </div>
+
+              <div class="w-50 text-center">
+                <h2 class="fst-italic">
+                  100k+
+                </h2>               
+                <p>ЗАРЕГИСТРИРОВАННЫХ ПОЛЬЗОВАТЕЛЕЙ</p>
+              </div>
+
+            </div>
+            <article class="blog-post border-bottom pb-4 mb-5 ">  
+              <h3 class="fst-italic">
+                Обо мне
+              </h3>          
+              <hr>
+              <p>Я опытный маркетолог фронтэнд разработчик с 12-летним стажем и 6-летним опытом руководства отделом маркетинга. Создал 7 успешных сайтов, владею навыком работы с CMS 1C Битрикс и HTML/CSS кодированием, навыками внедрения js-скриптов, навыками email-маркетинга и SEO продвижением. Помогу достичь бизнес-целей в интернете и поделюсь практическими советами.</p>
+            </article>
+
+            <article class="blog-post border-bottom pb-4 mb-5 ">                  
+              <h3 class="fst-italic">Достижения</h3>
+              <hr>
+              <ul>
+                <li>Запустил 7 сайтов по разным ТМ на CMS 1С Битрикс. </li>
+                <li>Лично принимал участие в дальнейшей доработке, SEO-оптимизации и продвижении сайтов</li>
+                <li>Самостоятельно разработал и запустил адаптивные мобильные версии этих сайтов</li>
+                <li>Посещаемость основного сайтов увеличилась почти в три раза без финансовых вложений в контекстную рекламу (Яндекс Директ и Google Ads)</li>
+                <li>Количество зарегистрированных покупателей выросло с 10 тыс. до 140 тыс</li>
+              </ul>
+            </article>
+
+            <article class="blog-post border-bottom pb-4 mb-5 ">               
+              <h3 class="fst-italic">Мои инструменты</h3>
+              <hr>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/js.png"  alt="...">
+                    </div>  
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/css.svg"  alt="...">
+                    </div>  
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/html5.svg"  alt="...">
+                    </div>  
+                  </div>
+                  <div class="carousel-item"> 
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/1c-bitrix.svg"  alt="...">
+                    </div>  
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/visualstudio_code.svg"  alt="...">
+                    </div>  
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/figma.svg"  alt="...">
+                    </div>  
+                  </div>>
+                  <div class="carousel-item"> 
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/ya.svg"  alt="...">
+                    </div>  
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/google.svg"  alt="...">
+                    </div>  
+                    <div class="btn btn-primary tools">
+                      <img src="/dist/img/photoshop.svg"  alt="...">
+                    </div>  
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+            </article>
+
+          </div>      
+        </div>
+      </section>
+
+
+    <section class="blog-post border-bottom pb-4 mb-4 ">                     
+      <h3 class="fst-italic">Примеры работ</h3>
+        <hr>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tilda-tab" data-bs-toggle="tab" data-bs-target="#tilda" type="button" role="tab" aria-controls="tilda" aria-selected="true">Tilda</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="bitrix-tab" data-bs-toggle="tab" data-bs-target="#bitrix" type="button" role="tab" aria-controls="bitrix" aria-selected="false">1C Bitrix</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="bitrix24-tab" data-bs-toggle="tab" data-bs-target="#bitrix24" type="button" role="tab" aria-controls="bitrix24" aria-selected="false">Bitrix 24</button>
+        </li>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="htlm-tab" data-bs-toggle="tab" data-bs-target="#htlm" type="button" role="tab" aria-controls="htlm" aria-selected="false">htlm/css/js</button>
+        </li>
+        
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="figma-tab" data-bs-toggle="tab" data-bs-target="#figma" type="button" role="tab" aria-controls="figma" aria-selected="false">Figma</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tilda" role="tabpanel" aria-labelledby="tilda-tab">          
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/tl1.png" class="card-img-top" alt="работа на tilda">
+                <div class="card-body">
+                  <h5 class="card-title">Портфолио на Tilda#1</h5>
+                  <p class="card-text">Мои варианты портфолио сделанные на tilda.</p>
+                  <a href="https://derjugin.tilda.ws/portfolio_ux/" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/t2.png" class="card-img-top" alt="работа на tilda">
+                <div class="card-body">
+                  <h5 class="card-title">Портфолио на Tilda#2</h5>
+                  <p class="card-text">Мои варианты портфолио сделанные на tilda.</p>                  
+                  <a href="https://derjugin.tilda.ws" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="bitrix" role="tabpanel" aria-labelledby="bitrix-tab">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/ol.png" class="card-img-top" alt="работа на bitrix">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт OLFA</h5>
+                  <p class="card-text">Демонстрация сайта OLFA.</p>
+                  <a href="https://olfa.ru" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/kr.png" class="card-img-top" alt="работа на bitrix">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт Kraftool</h5>
+                  <p class="card-text">Демонстрация одной из страниц.</p>                  
+                  <a href="https://kraftool.ru/manufacturing/" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="bitrix24" role="tabpanel" aria-labelledby="bitrix24-tab">          
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/b24.png" class="card-img-top" alt="работа на bitrix24">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт на bitrix24 </h5>
+                  <p class="card-text">Небольшая работа на bitrix24 посвещенная выставке</p>
+                  <a href="https://hnd.bitrix24site.ru/" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="htlm" role="tabpanel" aria-labelledby="htlm-tab">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/html.png" class="card-img-top" alt="работа на html">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт на github </h5>
+                  <p class="card-text">Небольшой сайт на основе макета из figma vrnas</p>
+                  <a href="https://derjugin.github.io" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/html2.png" class="card-img-top" alt="работа на bitrix">
+                <div class="card-body">
+                  <h5 class="card-title">Сайт портфоли на github</h5>
+                  <p class="card-text">Небольшой сайт портфоли.</p>                  
+                  <a href="https://derjugin.github.io/www.portfolio/" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="figma" role="tabpanel" aria-labelledby="figma-tab">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/f1.png" class="card-img-top" alt="работа в figma">
+                <div class="card-body">
+                  <h5 class="card-title">Работа в Figma</h5>
+                  <p class="card-text">Пример сайта о путешествиях.</p>
+                  <a href="https://www.figma.com/file/GEZJ6gqyKb0PjgSoZhr4mK/tweb-0615_baikal?type=design&mode=design&t=uA2uyiXi6QPw0uLV-1" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="/dist/img/f2.png" class="card-img-top" alt="работа в figma">
+                <div class="card-body">
+                  <h5 class="card-title">Работа в Figma</h5>
+                  <p class="card-text">Пример сайта портфолио.</p>                  
+                  <a href="https://www.figma.com/file/rsjTa4B7PZKAdJQBZydjli/Portfolio?type=design&mode=design&t=lEzwLf9frUG3mFJT-1" target="_blank" class="btn btn-primary">Посмотреть работу</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+      <section class="subscribe">
+        <div class="subscribe-wrapper">
+          <h3>Подпишись на рассылку новостей</h3>
+          <div class="subscribe-input-wrapper">
+            <img src="../dist/img/icon-message.svg" alt="">
+            <input type="email" placeholder="Ваш e-mail" name="" id="" required>
+            <button class="btn-subscribe"><img src="../dist/img/btn-sbcrb.svg" alt="значек подписаться"><span>подписаться</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-logo-wrapper">
+          <img class="logo" src="../dist/img/logo.svg" alt="логотип">
+          <div class="social">
+            <a class="vk" href="https://vk.com/" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="логотип vk">
+            </a>
+            <a class="tg" href="https://t.me/vrplace" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="логотип telegram">
+            </a>
+            <a class="youtube" href="https://www.youtube.com/" target="_blank">
+              <img src="../dist/img/icon-bg.svg" alt="логотип youtube">
+            </a>
+            <a class="gh" href="https://derjugin.github.io/" target="_blank">
+              <img src="../dist/img/icon-gh.svg" alt="логотип github">
+            </a>
+          </div>
+        </div>
+        <div class="footer-menu-wrapper body-text">
+          <ul class="heading-6">Основное
+            <li><a href="../">Главная</a></li>
+            <li><a href="../pricing/">Цены</a></li>
+            <li><a href="../service/">Сервис</a></li>
+            <li><a href="../blog/">Блог</a></li>
+            <li><a href="../about/team.html">Наша команда</a></li>
+          </ul>
+          <ul class="heading-6">Поддержка
+            <li><a href="../about/">О нас</a></li>
+            <li><a href="../portfolio/">Портфолио</a></li>
+            <li><a href="../contacts/">Контакты</a></li>
+          </ul>
+          <div class="help heading-6">Нужна помощь?
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/location.svg" alt="значек локации">125009 Россия, Москва, Романов переулок, 2с1
+
+            </div>
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/message.svg" alt="значек сообщения">vr-place@mail.ru
+            </div>
+            <div class="help-wrapper body-text">
+              <img src="../dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyrignt body-text">
+        <hr>
+        <p>© Copyright 2023. Все права защищены</p>
+      </div>   
+      <img class="footer-bg" src="../dist/img/bg-footer.png" alt="фон в виде волнистых линий">
+    </footer> 
+  </body>
+</html>

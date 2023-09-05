@@ -1,54 +1,47 @@
 // МЕНЮ
 function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById('myNav').style.width = "100%";
   }
   
   function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("myNav").style.width = "";
   }
-  // КОНЕЦ
+// КОНЕЦ
 
-// ВИДЕО
-  document.addEventListener('DOMContentLoaded', function() {
-    var videoContainer = document.querySelector('.video-container');
-    var videoWrapper = videoContainer.querySelector('.video-wrapper');
-    var videoIframe = videoWrapper.querySelector('iframe');
-    var closeButton = videoWrapper.querySelector('.close-button');
-    var videoTriggers = document.querySelectorAll('.video-trigger');
-    
-    for (var i = 0; i < videoTriggers.length; i++) {
-        videoTriggers[i].addEventListener('click', function() {
-            var videoUrl = this.getAttribute('data-video');
-            videoIframe.setAttribute('src', videoUrl);
-            videoContainer.classList.add('show-video');
-            closeButton.style.display = 'block';
-        });
-    }
-    
-    closeButton.addEventListener('click', function() {
-        videoIframe.setAttribute('src', '');
-        videoContainer.classList.remove('show-video');
-    });
-    
-    videoContainer.addEventListener('click', function(e) {
-        if (e.target === this) {
-            videoIframe.setAttribute('src', '');
-            videoContainer.classList.remove('show-video');
+// js меню по нажатию
+document.addEventListener('DOMContentLoaded', function() {
+  let firstLevelItems = document.querySelectorAll('.first-level');
+
+  // Обработчик события для каждого элемента first-level
+  firstLevelItems.forEach(function(item) {
+    let secondLevel = item.querySelector('.second-level');
+    let arrow = item.querySelector('img');
+
+    item.addEventListener('click', function() {
+      // Проверяем, открыто ли выпадающее меню
+      let isOpen = secondLevel.classList.contains('open');
+
+      // Закрываем все открытые меню
+      firstLevelItems.forEach(function(otherItem) {
+        let otherSecondLevel = otherItem.querySelector('.second-level');
+        let otherArrow = otherItem.querySelector('img');
+
+        if (otherSecondLevel !== secondLevel && otherSecondLevel.classList.contains('open')) {
+          otherSecondLevel.classList.remove('open');
+          otherArrow.style.transform = 'rotate(0deg)';
         }
+      });
+
+      // Изменяем состояние текущего меню и поворачиваем изображение стрелку
+      if (isOpen) {
+        secondLevel.classList.remove('open');
+        arrow.style.transform = 'rotate(0deg)';
+      } else {
+        secondLevel.classList.add('open');
+        arrow.style.transform = 'rotate(180deg)';
+      }
     });
-    
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            videoIframe.setAttribute('src', '');
-            videoContainer.classList.remove('show-video');
-        }
-    });
+  });
 });
 
-
-function loadVideo(videoUrl) {
-  var videoblock = document.querySelector('.videoblock');
-  videoblock.innerHTML = '<iframe src="' + videoUrl + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-}
-
-  // КОНЕЦ
+// js меню по нажатию END

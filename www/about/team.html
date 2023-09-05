@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Наша команда</title>   
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../dist/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../dist/owl/css/owl.theme.default.min.css">    
+    <!-- javascript Owl-->
+    <script src="../dist/owl/js/jquery.min.js"></script>
+    <script src="../dist/owl/js/owl.carousel.js"></script>
     <!-- Мои стили -->
     <link href="/css/main.css" rel="stylesheet" />
     <script src="/dist/script.js" defer></script>
@@ -14,35 +20,34 @@
     <img class="background-lines" src="../dist/img/lines.png" alt="фон в виде волнистых линий">
     <header class="header">
       <div class="header-wrapper">
-        <a href="../">
-          <img class="logo" src="../dist/img/logo.svg" alt="логотип">
+        <a href="/">
+          <img class="logo" src="/dist/img/logo.svg" alt="логотип">
         </a>
-        <a href="../contacts/" class="btn-action">Контакты</a>
+        <a href="/contacts/" class="btn-action">Контакты</a>
         <div class="menu">
           <nav id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="overlay-content body-text">
-              <li><a href="../">Главная</a></li>
-              <li><a href="../about/">О нас</a></li>
-              <li><a href="../service/">Сервис</a></li>
+              <li><a href="/">Главная</a></li>
+              <li><a href="/portfolio/">Портфолио</a></li>
+              <li><a href="/about/">О нас</a></li>
+              <li><a href="/service/">Сервис</a></li>
               <li>
-                <div class="menu-first-level">Страницы
-                  <img src="../dist/img/arrow.svg" alt="стрелка вниз">
-                  <div class="menu-second-level">
-                    <a href="../pricing/">Цены</a>
-                    <a href="../service/detail.html">Услуги</a>       
-                    <a class="active" href="../about/team.html">Наша команда</a>         
+                <div class="first-level">Прочее
+                  <img src="/dist/img/arrow.svg" alt="стрелка вниз">
+                  <div class="second-level">
+                    <a href="/pricing/">Цены</a>
+                    <a class="active" href="/about/team.html">Наша команда</a>     
+                    <a href="/blog/">Блог</a>     
                   </div>
                 </div>
               </li>
-              <li><a href="../blog/">Блог</a></li>
             </ul>
           </nav>
-          <span class="burger" onclick="openNav()"><img src="../dist/img/burger.svg" alt="мобильное меню"></span>
+          <span class="burger" onclick="openNav()"><img src="/dist/img/burger.svg" alt="мобильное меню"></span>
         </div>
       </div>
     </header>
-
 
     <main class="main">
       
@@ -68,14 +73,15 @@
             <h5>Наша команда профессионалов.</h5>
           </div>
         </div>
-        <div class="members">
-          <div class="member">
+
+        <div class="members owl-carousel owl-theme">
+          <div class="member item">
             <div class="member-img">
               <img src="/dist/img/team-bondan.png" alt="">
               <div class="member-bg"></div>
             </div>
             <div class="member-bio">
-              <p class="h6">Bondan Prabowo</p>
+              <p class="heading-6">William Smith</p>
               <p class="body-text-small">CEO</p>
             </div>
             <div class="member-soc">
@@ -84,13 +90,14 @@
               <a href="" class="soc-icon youtube"><img src="../dist/img/about-icon-soc-bg.svg" alt=""></a>
             </div>
           </div>
-          <div class="member">
+
+          <div class="member item">
             <div class="member-img">
               <img src="/dist/img/team-bay.png" alt="">
               <div class="member-bg"></div>
             </div>
             <div class="member-bio">
-              <p class="h6">Bayu Aji</p>
+              <p class="heading-6">James Johnson</p>
               <p class="body-text-small">VR Программист</p>
             </div>
             <div class="member-soc">
@@ -99,13 +106,14 @@
               <a href="" class="soc-icon gh"><img src="../dist/img/about-icon-soc-bg.svg" alt=""></a>
             </div>
           </div>
-          <div class="member">
+
+          <div class="member item">
             <div class="member-img">
               <img src="/dist/img/team-bran.png" alt="">
               <div class="member-bg"></div>
             </div>
             <div class="member-bio">
-              <p class="h6">Agung Brandon</p>
+              <p class="heading-6">Thomas Wilson</p>
               <p class="body-text-small">VR Художник</p>
             </div>
             <div class="member-soc">
@@ -114,13 +122,14 @@
               <a href="" class="soc-icon youtube"><img src="../dist/img/about-icon-soc-bg.svg" alt=""></a>
             </div>
           </div>
-          <div class="member">
+
+          <div class="member item">
             <div class="member-img">
               <img src="/dist/img/team-ando.png" alt="">
               <div class="member-bg"></div>
             </div>
             <div class="member-bio">
-              <p class="h6">Aldo Boy</p>
+              <p class="heading-6">Charles Brown</p>
               <p class="body-text-small">3D Дизайнер</p>
             </div>
             <div class="member-soc">
@@ -130,13 +139,13 @@
             </div>
           </div>
    
-          <div class="member">
+          <div class="member item">
             <div class="member-img">
               <img src="/dist/img/team-april.png" alt="">
               <div class="member-bg"></div>
             </div>
             <div class="member-bio">
-              <p class="h6">Aril Laso</p>
+              <p class="heading-6">Alexander Wilson</p>
               <p class="body-text-small">UI / UX Дизайнер</p>
             </div>
             <div class="member-soc">
@@ -146,13 +155,13 @@
             </div>
           </div>
    
-          <div class="member">
+          <div class="member item">
             <div class="member-img">
               <img src="/dist/img/team-beni.png" alt="">
               <div class="member-bg"></div>
             </div>
             <div class="member-bio">
-              <p class="h6">Beni Barak</p>
+              <p class="heading-6">Benjamin Thompson</p>
               <p class="body-text-small">3D Художник</p>
             </div>
             <div class="member-soc">
@@ -163,6 +172,7 @@
           </div>
    
         </div>
+
       </section>
 
       <section class="in-number">
@@ -185,8 +195,8 @@
           <h3>Подпишись на рассылку новостей</h3>
           <div class="subscribe-input-wrapper">
             <img src="../dist/img/icon-message.svg" alt="">
-            <input type="email" placeholder="Ваш e-mail" name="" id="">
-            <button class="btn-subscribe"><img src="../dist/img/btn-sbcrb.svg" alt=""></button>
+            <input type="email" placeholder="Ваш e-mail" name="" id="" required>
+            <button class="btn-subscribe"><img src="../dist/img/btn-sbcrb.svg" alt="значек подписаться"><span>подписаться</span></button>
           </div>
         </div>
       </section>
@@ -213,27 +223,25 @@
           </div>
         </div>
         <div class="footer-menu-wrapper body-text">
-          <ul class="h6">Основное
+          <ul class="heading-6">Основное
             <li><a href="../">Главная</a></li>
             <li><a href="../pricing/">Цены</a></li>
             <li><a href="../service/">Сервис</a></li>
             <li><a href="../blog/">Блог</a></li>
-            <li><a href="../our-team/">Наша команда</a></li>
+            <li><a href="../about/team.html">Наша команда</a></li>
           </ul>
-          <ul class="h6">Поддержка
+          <ul class="heading-6">Поддержка
             <li><a href="../about/">О нас</a></li>
+            <li><a href="../portfolio/">Портфолио</a></li>
             <li><a href="../contacts/">Контакты</a></li>
-            <li><a href="../FAQ/">FAQ</a></li>
-            <li><a href="../terms/">Пользовательское соглашение</a></li>
-            <li><a href="../policy/">Политика конфиденциальности</a></li>
           </ul>
-          <div class="help h6">Нужна помощь?
+          <div class="help heading-6">Нужна помощь?
             <div class="help-wrapper body-text">
               <img src="../dist/img/location.svg" alt="значек локации">125009 Россия, Москва, Романов переулок, 2с1
 
             </div>
             <div class="help-wrapper body-text">
-              <img src="../dist/img/message.svg" alt="значек сообщения">Support@VRNas.com
+              <img src="../dist/img/message.svg" alt="значек сообщения">vr-place@mail.ru
             </div>
             <div class="help-wrapper body-text">
               <img src="../dist/img/calling.svg" alt="значек телефона">+7 (495) 123 45 67
@@ -247,5 +255,32 @@
       </div>   
       <img class="footer-bg" src="../dist/img/bg-footer.png" alt="фон в виде волнистых линий">
     </footer> 
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true, 
+        navText: [
+          '<input type="button" class="prev" value="">',
+          '<input type="button" class="next" value="">'
+        ],
+        responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+          }
+        }
+      })
+    </script>
+    
   </body>
 </html>
